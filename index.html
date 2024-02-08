@@ -17,6 +17,10 @@
                   <img src="images/cintia.jpg" >
                   
                 </figure>
+                <audio id="cutingcrew" style="display: none;"  controls >
+                  <source src="audios/Cutting Crew - (I Just) Died In Your Arms.mp3" type="audio/mpeg">
+                  
+                </audio>
                 <!-- <source src="videos/lindaa.mp4" type="video/mp4"> -->
                 <!-- <source src="videos/linda.mp4" type="video/mp4"> -->
                 <!-- <source src="videos/lindaa.webm" type="video/webm"> -->
@@ -43,16 +47,15 @@
     <script>
       function question() {
           const alertPlaceholder = document.getElementById('floatingInput').value
-          // const cintia = document.getElementById('linda')
+          const cuttingcrew = document.getElementById('cutingcrew')
           if(alertPlaceholder != "Cintia") {
             alert("Você errou!! tente novamente.")
             floatingInput.value = "";
           }else {
             alert("Você acertou.")
             trocarImagem()
-            
-            // cintia.style.display = "block";
-            alertPlaceholder.value = "";
+            cuttingcrew.style.display = "block";
+            // floatingInput.value = "";
             
         }
       }  
